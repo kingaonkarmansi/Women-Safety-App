@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Women's Safety Portal</title>
+  <link rel="stylesheet" href="reports.css" />
+</head>
+<body>
+  <header>
+    <h1>Women's Safety Portal</h1>
+    <p>Empowering safety with one tap</p>
+  </header>
+
+  <main>
+    <!-- Emergency Alert Module -->
+    <section class="section">
+      <h2>Quick Emergency Alerts</h2>
+      <div class="quick-messages">
+        <p>Tap to send:</p>
+        <div class="message-grid" id="predefinedMessages"></div>
+      </div>
+
+      <h3>Or Type Your Own Message</h3>
+      <textarea id="customMessage" placeholder="Type your message here..."></textarea>
+      <button onclick="sendCustomAlert()">Send My Location & Message</button>
+      <p class="status" id="alertStatus"></p>
+    </section>
+
+    <!-- Previous Alerts Table -->
+    <section class="section">
+      <h2>Previous Alerts Sent</h2>
+      <div class="table-container">
+        <table id="alertTable">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Message</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Feedback Section -->
+    
+  </main>
+
+  <script src="reports.js"></script>
+</body>
+</html>
