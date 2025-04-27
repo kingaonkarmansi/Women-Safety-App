@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Know Your Rights - Women's Safety</title>
+  <link rel="stylesheet" href="rights.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Know Your Rights</h1>
+      <p>Important Laws for Every Male and Female to Tackle Harassment and Abuse</p>
+
+      <!-- Language Translate Dropdown -->
+      <div id="google_translate_element"></div>
+    </header>
+
+    <!-- Tabs for Male/Female -->
+    <div class="tabs">
+      <button class="tab-button active" onclick="showSection('female')">Female Laws</button>
+      <button class="tab-button" onclick="showSection('male')">Male Laws</button>
+    </div>
+
+    <!-- Female Section -->
+    <section id="female" class="law-section active-section">
+      <div class="law-card">
+        <h3>Sexual Harassment of Women at Workplace Act (2013)</h3>
+        <p>This law protects women from sexual harassment at workplaces and provides a complaints mechanism.</p>
+      </div>
+      <div class="law-card">
+        <h3>Dowry Prohibition Act (1961)</h3>
+        <p>Demanding dowry is a criminal offense. Both the giver and taker can be punished with imprisonment and fines.</p>
+      </div>
+      <div class="law-card">
+        <h3>Domestic Violence Act (2005)</h3>
+        <p>This law provides protection to women from domestic abuse, including physical, emotional, and economic violence.</p>
+      </div>
+    </section>
+
+    <!-- Male Section -->
+    <section id="male" class="law-section">
+      <div class="law-card">
+        <h3>Section 498A (Misuse Protection)</h3>
+        <p>Men falsely accused under dowry laws can defend themselves through legal remedies and file counter cases.</p>
+      </div>
+      <div class="law-card">
+        <h3>Protection from False Rape Allegations</h3>
+        <p>Filing false rape cases is a punishable offense. Victims of such misuse can approach Human Rights Commission.</p>
+      </div>
+      <div class="law-card">
+        <h3>Equal Opportunity Employment</h3>
+        <p>Men facing gender discrimination at the workplace have legal rights to seek justice under labor laws.</p>
+      </div>
+    </section>
+  </div>
+
+  <!-- Google Translate Script -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script src="rights.js"></script>
+</body>
+</html>
